@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- spinner -->
+    <div id="spinner">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- content -->
+    <audio id="myAudioS" controls>
+		
+      <source src="audios/success.mp3" type="audio/mpeg">
+     
+      </audio>
+      <audio id="myAudioF" controls>
+		
+        <source src="audios/failed.mp3" type="audio/mpeg">
+     
+        </audio>
+    <div id="wrap">
+      <div id="content">
+        <div id="content-text"> <img src="images/audio.jpg" alt="audio">
+          <h1 id="content-question">Listen and tick (✓). Then say</h1></div>
+       
+     <div id="parent">
+       <span id="numberQ">1</span>
+       
+       <label class="lab">
+        
+        <div class="A">a</div>
+           <input type="radio" id="a" class="answer">
+           <img   class="img-content" id="img-1" alt="option1">
+          
+           <div id="status" class="corr"></div>
+
+         </label>
+        
+         <label class="lab">
+          <div class="A">b</div>
+           <input type="radio" id="b" class="answer" >
+           <img  class="img-content" alt="option2">
+          
+           <div id="statusB" class="corr"></div>
+
+         </label>
+
+        
+
+     
+     </div>
+     <div id="controls"> 
+        <div id="left">
+          <label>
+            <input type="radio" id="reloadFirst"  alt="button">
+            <img  class="img-btn" src="images/reload.jpg">
+          </label>
+          <div id="audio">
+            <audio id="myAudio" controls>
+		
+              <source src="audios/success.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+          </div>
+        </div>
+        <div id="btns">
+          <label>
+            <input type="radio" id="reloadCurrent"  alt="button">
+            <img  class="img-btn" src="images/undo.jpg">
+          </label>
+          <label>
+            <input type="radio" id="show" alt="button">
+            <img  class="img-btn" src="images/show.jpg">
+          </label>
+          <label>
+            <input type="radio" id="previous" alt="button">
+            <img  class="img-btn" src="images/pre.jpg">
+          </label>
+           
+          <label>
+            <input type="text" id="slide" alt="button">
+          </label>
+          <label>
+            <input type="radio" id="next"alt="button">
+            <img  class="img-btn" src="images/next.jpg"> 
+          </label>
+        </div>
+
+     </div>
+     <div id="divCorrect" class="emoj">
+      <img src="images/correct.gif" alt="correct gif">
+     </div>
+     <div id="divwrong"  class="emoj">
+      <img src="images/wrong.gif" alt="correct gif">
+     </div>
+   </div>
+    
+ 
+    </div>
+ 
+   
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
